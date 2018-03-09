@@ -1,0 +1,3 @@
+/home/hang/vnpy/vnpy/api/ib/ibapi/linux/build/CMakeFiles/edit_cache.dir
+/home/hang/vnpy/vnpy/api/ib/ibapi/linux/build/CMakeFiles/rebuild_cache.dir
+/home/hang/vnpy/vnpy/api/ib/ibapi/linux/build/CMakeFiles/twsapi.dir
