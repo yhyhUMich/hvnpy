@@ -286,6 +286,8 @@ class RpcClient(RpcObject):
     #----------------------------------------------------------------------
     def callback(self, topic, data):
         """回调函数，必须由用户实现"""
+        print topic
+        print data
         raise NotImplementedError
     
     #----------------------------------------------------------------------

@@ -25,13 +25,13 @@ class TestServer(RpcServer):
 
 if __name__ == '__main__':
     repAddress = 'tcp://*:2014'
-    pubAddress = 'tcp://*:0602'
+    pubAddress = 'tcp://*:2015'
     
     ts = TestServer(repAddress, pubAddress)
     ts.start()
     
     while 1:
         content = 'current server time is %s' % time()
-        print content
+        #print content
         ts.publish('test', content)
         sleep(2)
