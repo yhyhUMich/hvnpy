@@ -96,7 +96,7 @@ def runParentProcess():
         # 判断当前处于的时间段
         if ((currentTime >= DAY_START and currentTime <= DAY_END) or
             (currentTime >= NIGHT_START) or
-            (currentTime <= NIGHT_END)):
+                (currentTime <= NIGHT_END)):
             recording = True
         
         # 记录时间则需要启动子进程

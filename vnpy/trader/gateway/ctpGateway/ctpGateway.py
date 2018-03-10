@@ -393,9 +393,9 @@ class CtpMdApi(MdApi):
             # 如果新tick的时间小于夜盘分隔，且上一个tick的时间大于夜盘分隔，则意味着越过了12点
             if (self.tickTime and 
                 newTime < NIGHT_TRADING and
-                self.tickTime > NIGHT_TRADING):
-                self.tradingDt += timedelta(1)                          # 日期加1
-                self.tradingDate = self.tradingDt.strftime('%Y%m%d')    # 生成新的日期字符串
+                    self.tickTime > NIGHT_TRADING):
+                    self.tradingDt += timedelta(1)                          # 日期加1
+                    self.tradingDate = self.tradingDt.strftime('%Y%m%d')    # 生成新的日期字符串
                 
             tick.date = self.tradingDate    # 使用本地维护的日期
             
@@ -582,7 +582,7 @@ class CtpTdApi(TdApi):
             self.gateway.onError(err)
             
             # 标识登录失败，防止用错误信息连续重复登录
-            self.loginFailed =  True
+            self.loginFailed = True
         
     #----------------------------------------------------------------------
     def onRspUserLogout(self, data, error, n, last):

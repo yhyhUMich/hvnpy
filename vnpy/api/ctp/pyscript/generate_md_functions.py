@@ -12,7 +12,7 @@ def processCallBack(line):
     line = line.replace('\tvirtual void ', '')      # 删除行首的无效内容
     line = line.replace('{};\n', '')                # 删除行尾的无效内容
 
-    content = line.split('(')
+    content = line.split('(')CTPAPI_LIBRARY
     cbName = content[0]                             # 回调函数名称
 
     cbArgs = content[1]                             # 回调函数参数
