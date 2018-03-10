@@ -1,3 +1,0 @@
-/home/hang/vnpy/vnpy/api/ib/build/CMakeFiles/edit_cache.dir
-/home/hang/vnpy/vnpy/api/ib/build/CMakeFiles/rebuild_cache.dir
-/home/hang/vnpy/vnpy/api/ib/build/CMakeFiles/vnib.dir
