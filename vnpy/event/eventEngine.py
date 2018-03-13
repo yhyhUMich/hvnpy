@@ -59,7 +59,7 @@ class EventEngine(object):
         self.__active = False
         
         # 事件处理线程
-        self.__thread = Thread(target = self.__run)
+        self.__thread = Thread(target=self.__run)
         
         # 计时器，用于触发计时器事件
         self.__timer = QTimer()

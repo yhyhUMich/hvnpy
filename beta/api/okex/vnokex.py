@@ -105,10 +105,10 @@ class OkexApi(object):
         websocket.enableTrace(trace)
 
         self.ws = websocket.WebSocketApp(self.host, 
-                                             on_message=self.onMessage,
-                                             on_error=self.onError,
-                                             on_close=self.onClose,
-                                             on_open=self.onOpen)        
+                                         on_message=self.onMessage,
+                                         on_error=self.onError,
+                                         on_close=self.onClose,
+                                         on_open=self.onOpen)        
             
         self.thread = Thread(target=self.ws.run_forever)
         self.thread.start()
@@ -394,7 +394,7 @@ class OkexFuturesApi(OkexApi):
         self.sendTradingRequest(channel, params)
 
     #----------------------------------------------------------------------
-    def subscribeFuturesTrades( self):
+    def subscribeFuturesTrades(self):
         channel = 'ok_sub_futureusd_trades'
         self.sendTradingRequest(channel, {})
 
